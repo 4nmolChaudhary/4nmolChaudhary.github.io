@@ -1,0 +1,67 @@
+.nav-container{
+    background: transparent;
+    font-family: 'GoogleSans-Bold';
+    width: 5%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+}
+.inner-nav-container{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.primary{
+    color: #2C2C2C;
+}
+.secondary{
+    color: var(--primaryBackgroundColor);
+}
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-item:hover{
+    cursor: pointer;
+}
+.nav-item:hover .secondary{
+    color: var(--primaryTextColor);
+}
+.active .secondary{
+    color: var(--primaryTextColor);
+}
+
+@media (min-width:300px) and (max-width:600px){
+    .nav-container{
+        margin-right: 18px;
+    }
+    .nav-item svg,.icons a svg{
+        width: 26px;
+        height: 26px;
+    }
+   
+}
+@media (min-width:600px) and (max-width:768px){
+    .nav-container{
+        margin-right: 18px;
+    }
+    .nav-item svg,.icons a svg{
+        width: 35px;
+        height: 35px;
+    }
+}
+@media (min-width:769px) and (max-width:992px){
+    .nav-container{
+        margin-right: 18px;
+    }
+    .nav-item svg,.icons a svg{
+        width: 30px;
+        height: 30px;
+    }
+}

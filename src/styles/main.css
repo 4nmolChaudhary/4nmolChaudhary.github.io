@@ -1,0 +1,513 @@
+/*---------------------------------- variables ----------------------------------*/
+:root{
+    --primaryBackgroundColor:#f4f8fb;
+    --primaryTextColor:#292a2c;
+    --topHeaderGradient:linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff);
+}
+/*---------------------------------- fonts ----------------------------------*/
+@font-face{
+    font-family: 'GoogleSans-Regular';
+    src:url('../fonts/GoogleSans-Regular.ttf');
+}
+@font-face{
+    font-family: 'GoogleSans-Medium';
+    src:url('../fonts/GoogleSans-Medium.ttf');
+}
+@font-face{
+    font-family: 'GoogleSans-Bold';
+    src:url('../fonts/GoogleSans-Bold.ttf');
+}
+body{
+    background: #fff;
+    font-family: 'GoogleSans-Bold';
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.home-container{
+    background: var(--primaryBackgroundColor);
+    font-family: 'GoogleSans-Bold';
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.rainbow-bar{
+    height: 5px;
+    width: 100%;
+    background: var(--topHeaderGradient);
+}
+.home-content{
+    margin: 0 auto;
+    width:70%;
+    height: 100%;
+    padding: 30px;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.avatar{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+.name{
+    font-family: 'GoogleSans-Bold';
+    font-size: 2rem;
+}
+.content{
+    font-family: 'GoogleSans-Medium';
+    font-size: 4.5rem;
+}
+.text-content,.what-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    height: 80%;
+}
+.what-items{
+    justify-content: flex-start;
+}
+.small-text,.card-desc{
+    font-family: 'GoogleSans-Regular';
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.button-row{
+    margin: 15px 0px;
+}
+.primary-button,.secondary-button{
+    text-decoration: none;
+    padding:18px 32px;
+    outline:none;
+    box-sizing:border-box;
+    font-size:16px;
+    font-family:'GoogleSans-Bold';
+    cursor: pointer;
+    border:2px solid var(--primaryTextColor);
+    margin-right: 15px;
+}
+.primary-button{
+    background:var(--primaryTextColor) ;
+    color: var(--primaryBackgroundColor);
+}
+.secondary-button{
+    background: none;
+    color: var(--primaryTextColor);
+}
+.secondary-button:hover{
+    background: var(--primaryTextColor);
+    color: var(--primaryBackgroundColor);
+}
+.item-row,.item-row-x{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom:10px;
+}
+.header-container-title{
+    margin-bottom: 20px;
+}
+.skill-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.skill-title div svg{
+    margin-right: 15px;
+}
+.item,.item-content,.footer-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-item{
+    margin-top: 30px;
+    justify-content: flex-start;
+}
+.item,.project-card{
+    border:2px dashed var(--primaryTextColor);
+    padding: 18px 32px;
+}
+.skill-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.item-content{
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: var(--primaryTextColor);
+    text-decoration: none;
+    
+}
+.item-title,.card-title{
+    font-family: 'GoogleSans-Bold';
+    font-size: 2rem;
+}
+.item-text,.card-tags{
+    opacity: 0.7;
+}
+.social-icons,.social-icons div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icons a{
+    margin: 0 10px;
+    color: #292a2c;
+}
+.cc{
+    margin-top: 20px;
+}
+/*            About Page Added Styles                       */
+.quote{
+    font-size: 3rem;
+}
+.tag{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    margin: 0 5px;
+    background: var(--primaryTextColor);
+}
+.line-d{
+    flex-grow: 100;
+    height: 2px;
+    margin: 0 0 0 5px;
+    background: var(--primaryTextColor);
+}
+
+
+.pad10{
+    padding-left: 10px;
+}
+.skill-title .name{
+    font-size: 1.2rem;
+}
+.card-title{
+    font-size: 1.5rem;
+}
+.card-desc{
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 10px 0;
+}
+.project-card{
+    padding: 18px 32px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.projects-link{
+    color: var(--primaryTextColor);
+    text-decoration: none;
+}
+.contact-item{
+    width: auto;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+}
+
+
+@media (min-width:300px) and (max-width:600px){
+    .content,.name,.item-title{
+        font-size: 18px;
+        font-family: 'GoogleSans-Bold';
+    }
+    .small-text{
+        font-size: 16px;
+    }
+    .primary-button,.secondary-button{
+        padding:16px;
+        width: 100%;
+        margin: 5px 0;
+    }
+    .header-container-title svg{
+        width: 78px;
+    }
+    .item{
+        padding: 0 32px;
+    }
+    .item-row{
+        grid-template-columns: none;
+    }
+    .item-row-x{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .item-icon svg{
+        width: 40px;
+    }
+    
+    .button-row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .item-text,.social-icons div{
+        font-size: 14px;
+    }
+    .footer-item{
+        margin-top: -10px;
+    }
+    .social-icons{
+        flex-direction: column;
+    }
+    .social-icons div{
+        display: flex;
+        margin-top: 5px;
+        flex-direction: row;
+        justify-self: flex-start;
+        text-align: left;
+    }
+    .cc{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .small-icon svg{
+        width: 25px;
+        height:25px;
+    }
+    .contact-item{
+        padding: 0;
+    }
+}
+
+@media (min-width:600px) and (max-width:768px){
+    .content{
+        font-size: 26px;
+    }
+    .name,.item-title{
+        font-size: 18px;
+        font-family: 'GoogleSans-Bold';
+    }
+    .small-text{
+        font-size: 18px;
+    }
+    .primary-button,.secondary-button{
+        padding:16px;
+        width: 100%;
+        margin: 5px 0;
+    }
+    .header-container-title svg{
+        width: 78px;
+    }
+    .item{
+        padding: 0 32px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .item-row{
+        grid-template-columns: none;
+    }
+    .item-row-x{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .item-icon svg{
+        width: 40px;
+    }
+    
+    .button-row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .item-text,.social-icons div{
+        font-size: 14px;
+    }
+    .footer-item{
+        margin-top: -10px;
+    }
+    .social-icons{
+        flex-direction: column;
+    }
+    .social-icons div{
+        display: flex;
+        margin-top: 5px;
+        flex-direction: row;
+        justify-self: flex-start;
+        text-align: left;
+    }
+    .cc{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .small-icon svg{
+        width: 25px;
+        height:25px;
+    }
+    .contact-item{
+        padding: 0;
+    }
+}
+@media (min-width:769px) and (max-width:992px){
+    .content{
+        font-size: 2.8rem;
+    }
+    .name,.item-title{
+        font-size: 18px;
+        font-family: 'GoogleSans-Bold';
+    }
+    .small-text{
+        font-size: 18px;
+    }
+    .primary-button,.secondary-button{
+        padding:16px;
+        width: 100%;
+        margin: 5px 0;
+    }
+    .header-container-title svg{
+        width: 78px;
+    }
+    .item{
+        padding: 0 32px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .item-row{
+        grid-template-columns: none;
+    }
+    .item-row-x{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .item-icon svg{
+        width: 40px;
+    }
+    
+    .button-row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .item-text,.social-icons div{
+        font-size: 14px;
+    }
+    .footer-item{
+        margin-top: -10px;
+    }
+    .social-icons{
+        flex-direction: column;
+    }
+    .social-icons div{
+        display: flex;
+        margin-top: 5px;
+        flex-direction: row;
+        justify-self: flex-start;
+        text-align: left;
+    }
+    .cc{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .small-icon svg{
+        width: 25px;
+        height:25px;
+    }
+    .contact-item{
+        padding: 0;
+    }
+}
+@media (min-width:993px) and (max-width:1200px){
+    .content{
+        font-size: 2.8rem;
+    }
+    .name,.item-title{
+        font-size: 20px;
+        font-family: 'GoogleSans-Bold';
+    }
+    .small-text{
+        font-size: 20px;
+    }
+    .primary-button,.secondary-button{
+        padding:16px;
+        width: 100%;
+        margin: 5px 5px 5px 0;
+    }
+    .header-container-title svg{
+        width: 78px;
+    }
+    .item{
+        padding: 0 32px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .item-row{
+        grid-template-columns: none;
+    }
+    .item-row-x{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .item-icon svg{
+        width: 40px;
+    }
+    
+    .button-row{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .item-text,.social-icons div{
+        font-size: 16px;
+    }
+    .footer-item{
+        margin-top: -10px;
+    }
+    .social-icons{
+        flex-direction: column;
+    }
+    .social-icons div{
+        display: flex;
+        margin-top: 5px;
+        flex-direction: row;
+        justify-self: flex-start;
+        text-align: left;
+    }
+    .cc{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .small-icon svg{
+        width: 25px;
+        height:25px;
+    }
+    .contact-item{
+        padding: 0;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/*@media only screen and (min-width: 992px) {...}*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1200px) {...}*/
