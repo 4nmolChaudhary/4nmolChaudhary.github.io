@@ -15,8 +15,7 @@
 
 You can see the portfolio website on both of the provided links
     
-[![On Netlify](static/iconfinder_netlify_4691413.png =50x50) On Netlify](https://anmolchaudhary.netlify.com/)
-
-[![On Github Pages]()](https://4nmolChaudhary.github.io/)
+[<img src="static/Netlify.png" height="25">](https://anmolchaudhary.netlify.com/)
+[<img src="static/GitHubPages.png" height="25">](https://4nmolChaudhary.github.io/)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
