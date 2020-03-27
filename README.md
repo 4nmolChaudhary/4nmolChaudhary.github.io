@@ -15,8 +15,8 @@
 
 You can see the portfolio website on both of the provided links
     
-[![On Netlify](https://www.iconfinder.com/icons/4691413/netlify_icon)](https://anmolchaudhary.netlify.com/)
+[![On Netlify]()](https://anmolchaudhary.netlify.com/)
 
-[![On Github Pages](https://zeit.co/button)](https://4nmolChaudhary.github.io/)
+[![On Github Pages]()](https://4nmolChaudhary.github.io/)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
