@@ -11,28 +11,12 @@
 
 > This is my portfolio web site made in Gatsby during the #teamTanayJobChallenge.
 
-## 🧐 What's inside?
+## 🧐 Where to see?
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+You can see the portfolio website on both of the provided links
+    
+[![On Netlify](https://www.iconfinder.com/icons/4691413/netlify_icon)](https://anmolchaudhary.netlify.com/)
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+[![On Github Pages](https://zeit.co/button)](https://4nmolChaudhary.github.io/)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
