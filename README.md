@@ -16,6 +16,6 @@
 You can see the portfolio website on both of the provided links
     
 [<img src="static/Netlify.png" height="25">](https://anmolchaudhary.netlify.com/)
-[<img src="static/GitHubPages.png" height="25">](https://4nmolChaudhary.github.io/)
+[<img src="static/GithubPages.png" height="25">](https://4nmolChaudhary.github.io/)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
